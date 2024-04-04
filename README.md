@@ -1,2 +1,2 @@
 # RHLM_Gym
-Real Hasta La Muerte GYM
+Acá se va a desarrollar el software para el Real *hasta la muerte GYM*
