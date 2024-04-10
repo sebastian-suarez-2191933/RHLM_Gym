@@ -23,7 +23,7 @@ public class Rutina implements Serializable {
     @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "id_maquina")
+    @Column(name = "idmaquina")
     private Long idMaquina;
 
     @Column(name = "descripcion")
@@ -33,7 +33,7 @@ public class Rutina implements Serializable {
 
     @JsonIgnore
     @ManyToOne
-    @JoinColumn(name = "id_maquina",insertable = false,updatable = false)
+    @JoinColumn(name = "idmaquina",insertable = false,updatable = false)
     private Maquina maquina;
 
 }
