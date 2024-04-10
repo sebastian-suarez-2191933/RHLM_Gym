@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/projectGym/projectGym.iml" filepath="$PROJECT_DIR$/projectGym/projectGym.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/RHLM_Gym_Back.iml" filepath="$PROJECT_DIR$/.idea/RHLM_Gym_Back.iml" />
     </modules>
   </component>
 </project>
