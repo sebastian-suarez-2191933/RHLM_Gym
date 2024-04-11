@@ -1,0 +1,19 @@
+package com.RHLM.projectGym.dto;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serializable;
+import java.util.Date;
+
+@Getter
+@Setter
+public class RolesDTO implements Serializable {
+
+    private static final long serialVersionUID = 252887687018015645L;
+
+    private Long id;
+    private String nombre;
+    private Date fechaDesde;
+    private Date fechaHasta;
+}

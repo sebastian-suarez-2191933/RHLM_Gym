@@ -10,10 +10,10 @@ import java.util.Date;
 @Entity
 @Data
 @NoArgsConstructor
-@Table(name = "tipo_suscripcion", schema = "public")
-public class TipoSuscripcion implements Serializable {
+@Table(name = "roles", schema = "public")
+public class Roles implements Serializable {
 
-    private static final long serialVersionUID = -8050859745142300672L;
+    private static final long serialVersionUID = 4679409100396472021L;
 
     @Id
     @Column(name = "id")
@@ -23,9 +23,9 @@ public class TipoSuscripcion implements Serializable {
     @Column(name = "nombre")
     private String nombre;
 
-    @Column(name = "tiempo")
-    private Date tiempo;
+    @Column(name = "fecha_desde")
+    private Date fechaDesde;
 
-    @Column(name = "precio")
-    private int precio;
+    @Column(name = "fecha_hasta")
+    private Date fechaHasta;
 }
