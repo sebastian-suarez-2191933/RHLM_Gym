@@ -32,13 +32,13 @@ public class Usuario implements Serializable {
     @Column(name = "estatura")
     private Double estatura;
 
-    @Column(name = "tipo_cuerpo")
+    @Column(name = "tipocuerpo")
     private String tipoCuerpo;
 
-    @Column(name = "porcentaje_graso")
+    @Column(name = "porcentajegraso")
     private String porcentajeGraso;
 
-    @Column(name = "obejtivo")
+    @Column(name = "objetivo")
     private String objetivo;
 
     //Relaciones

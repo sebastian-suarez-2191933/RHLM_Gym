@@ -6,7 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 @Entity
 @Data
@@ -28,9 +30,11 @@ public class Asistencia implements Serializable {
     private Long idRutina;
 
     @Column(name = "llegada")
+    @Temporal(TemporalType.TIMESTAMP)
     private Date llegada;
 
     @Column(name = "salida")
+    @Temporal(TemporalType.TIMESTAMP)
     private Date salida;
 
     //Relaciones
@@ -44,5 +48,14 @@ public class Asistencia implements Serializable {
     @ManyToOne
     @JoinColumn(name = "id_rutina",insertable = false,updatable = false)
     private Rutina rutina;
+
+    @PrePersist
+    protected void onCreate() {
+        TimeZone colombiaTimeZone = TimeZone.getTimeZone("America/Bogota");
+        llegada = new Date();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        sdf.setTimeZone(colombiaTimeZone);
+        llegada = new Date(sdf.format(llegada));
+    }
 
 }
