@@ -6,7 +6,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-11T05:03:27-0500",
+    date = "2024-04-16T15:14:29-0500",
     comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
 )
 public class RolesUsuarioMapperImpl implements RolesUsuarioMapper {

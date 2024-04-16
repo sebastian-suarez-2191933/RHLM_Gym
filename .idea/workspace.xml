@@ -5,145 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84fb6695-df2f-4885-9349-1cf646284a47" name="Changes" comment="Se añaden TODOS los modelos de negocio">
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/PersonaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/RolesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/RolesUsuarioController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/SuscripcionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/TipoSuscripcionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/PersonaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/RolesDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/RolesUsuarioDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/SuscripcionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/TipoSuscripcionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/UsuarioDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/PersonaMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/RolesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/RolesUsuarioMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/SuscripcionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/TipoSuscripcionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/UsuarioMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/RolesUsuario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IPersonaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IRolesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IRolesUsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/ISuscripcionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/ITipoSuscripcionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IUsuarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/PersonaImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/RolesImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/RolesUsuarioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/SuscripcionImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/TipoSuscripcionImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/UsuarioImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/IPersonaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/IRolesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/IRolesUsuarioService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/ISuscripcionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/ITipoSuscripcionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/IUsuarioService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_4_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_4_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_6_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_15_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_15_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_15_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_15_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_15_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_15_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_4_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_5_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_commons_1_12_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_observation_1_12_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_smallrye_jandex_3_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_activation_jakarta_activation_api_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_inject_jakarta_inject_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_xml_bind_jakarta_xml_bind_api_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_14_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_14_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_5_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_21_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_21_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_10_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_10_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_24_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_awaitility_awaitility_4_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_31_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_angus_angus_activation_2_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_core_4_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_4_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_4_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_6_0_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_orm_hibernate_core_6_4_4_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_5_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_10_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_5_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_6_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_30.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_2_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_3_2_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_6_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_2_2.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/AdminDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/AdminMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IAdminRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/AdminImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/IAdminService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/projectGym.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/TipoSuscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/TipoSuscripcion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Rutina.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Rutina.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/TipoSuscripcion.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/TipoSuscripcion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MaquinaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MaquinaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MusculoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MusculoMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/PersonaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/PersonaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RolesMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RolesMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RolesUsuarioMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RolesUsuarioMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RutinaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RutinaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/SuscripcionMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/SuscripcionMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/TipoSuscripcionMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/TipoSuscripcionMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/UsuarioMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/UsuarioMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,30 +69,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ProjectGymApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/tiendaDER&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven.projectGym [clean].executor": "Run",
+    "Maven.projectGym [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.ProjectGymApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/secas/OneDrive/Desktop/RHLM_Gym_Back",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="ProjectGymApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -245,6 +125,7 @@
       <workItem from="1712736412557" duration="88000" />
       <workItem from="1712736667917" duration="606000" />
       <workItem from="1712798916186" duration="22410000" />
+      <workItem from="1713296820811" duration="2351000" />
     </task>
     <task id="LOCAL-00001" summary="Se añaden TODOS los modelos de negocio">
       <option name="closed" value="true" />
