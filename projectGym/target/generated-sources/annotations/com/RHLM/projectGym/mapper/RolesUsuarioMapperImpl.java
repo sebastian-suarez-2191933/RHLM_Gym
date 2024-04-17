@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-11T23:29:42-0500",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
+    date = "2024-04-16T22:34:08-0500",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
 )
 public class RolesUsuarioMapperImpl implements RolesUsuarioMapper {
 
@@ -19,11 +19,11 @@ public class RolesUsuarioMapperImpl implements RolesUsuarioMapper {
 
         RolesUsuario rolesUsuario = new RolesUsuario();
 
-        rolesUsuario.setId( rolesUsuarioDTO.getId() );
-        rolesUsuario.setIdRol( rolesUsuarioDTO.getIdRol() );
-        rolesUsuario.setIdPersona( rolesUsuarioDTO.getIdPersona() );
         rolesUsuario.setFechaDesde( rolesUsuarioDTO.getFechaDesde() );
         rolesUsuario.setFechaHasta( rolesUsuarioDTO.getFechaHasta() );
+        rolesUsuario.setId( rolesUsuarioDTO.getId() );
+        rolesUsuario.setIdPersona( rolesUsuarioDTO.getIdPersona() );
+        rolesUsuario.setIdRol( rolesUsuarioDTO.getIdRol() );
 
         return rolesUsuario;
     }
@@ -36,11 +36,11 @@ public class RolesUsuarioMapperImpl implements RolesUsuarioMapper {
 
         RolesUsuarioDTO rolesUsuarioDTO = new RolesUsuarioDTO();
 
-        rolesUsuarioDTO.setId( rolesUsuario.getId() );
-        rolesUsuarioDTO.setIdRol( rolesUsuario.getIdRol() );
-        rolesUsuarioDTO.setIdPersona( rolesUsuario.getIdPersona() );
         rolesUsuarioDTO.setFechaDesde( rolesUsuario.getFechaDesde() );
         rolesUsuarioDTO.setFechaHasta( rolesUsuario.getFechaHasta() );
+        rolesUsuarioDTO.setId( rolesUsuario.getId() );
+        rolesUsuarioDTO.setIdPersona( rolesUsuario.getIdPersona() );
+        rolesUsuarioDTO.setIdRol( rolesUsuario.getIdRol() );
 
         return rolesUsuarioDTO;
     }

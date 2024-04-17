@@ -1,6 +1,8 @@
 package com.RHLM.projectGym.controller;
 
 import com.RHLM.projectGym.dto.AdminDTO;
+import com.RHLM.projectGym.model.Admin;
+import com.RHLM.projectGym.services.JwtUtil;
 import com.RHLM.projectGym.services.interfaces.IAdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -43,4 +45,23 @@ public class AdminController {
         this.adminService.deleteAdmin(id);
         return new ResponseEntity<>(true,HttpStatus.OK);
     }
+    
+    @Autowired
+    private JwtUtil jwtUtil;
+    
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestBody AdminDTO adminDTO) {
+    // Verificar si las credenciales son válidas
+        AdminDTO admin = adminService.findByUsuario(adminDTO.getUsuario());
+        if (admin != null && admin.getContra().equals(adminDTO.getContra())) {
+        // Si las credenciales son válidas, generar un token de autenticación
+            String token = jwtUtil.generateAuthToken(admin);
+        // Devolver el token en la respuesta
+            return ResponseEntity.ok(token);
+        } else {
+        // Si las credenciales no son válidas, devolver un mensaje de error
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Credenciales incorrectas");
+        }
+    }
+
 }

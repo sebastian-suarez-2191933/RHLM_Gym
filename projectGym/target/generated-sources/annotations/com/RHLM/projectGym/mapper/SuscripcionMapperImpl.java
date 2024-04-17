@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-11T23:29:42-0500",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
+    date = "2024-04-16T22:34:08-0500",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
 )
 public class SuscripcionMapperImpl implements SuscripcionMapper {
 
@@ -19,11 +19,11 @@ public class SuscripcionMapperImpl implements SuscripcionMapper {
 
         Suscripcion suscripcion = new Suscripcion();
 
+        suscripcion.setEstado( suscripcionDTO.getEstado() );
+        suscripcion.setFechaFin( suscripcionDTO.getFechaFin() );
+        suscripcion.setFechaInicio( suscripcionDTO.getFechaInicio() );
         suscripcion.setId( suscripcionDTO.getId() );
         suscripcion.setIdTipoSuscripcion( suscripcionDTO.getIdTipoSuscripcion() );
-        suscripcion.setFechaInicio( suscripcionDTO.getFechaInicio() );
-        suscripcion.setFechaFin( suscripcionDTO.getFechaFin() );
-        suscripcion.setEstado( suscripcionDTO.getEstado() );
 
         return suscripcion;
     }
@@ -36,11 +36,11 @@ public class SuscripcionMapperImpl implements SuscripcionMapper {
 
         SuscripcionDTO suscripcionDTO = new SuscripcionDTO();
 
+        suscripcionDTO.setEstado( suscripcion.getEstado() );
+        suscripcionDTO.setFechaFin( suscripcion.getFechaFin() );
+        suscripcionDTO.setFechaInicio( suscripcion.getFechaInicio() );
         suscripcionDTO.setId( suscripcion.getId() );
         suscripcionDTO.setIdTipoSuscripcion( suscripcion.getIdTipoSuscripcion() );
-        suscripcionDTO.setFechaInicio( suscripcion.getFechaInicio() );
-        suscripcionDTO.setFechaFin( suscripcion.getFechaFin() );
-        suscripcionDTO.setEstado( suscripcion.getEstado() );
 
         return suscripcionDTO;
     }

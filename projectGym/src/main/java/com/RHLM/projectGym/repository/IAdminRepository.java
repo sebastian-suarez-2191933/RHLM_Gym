@@ -4,5 +4,5 @@ import com.RHLM.projectGym.model.Admin;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface IAdminRepository extends JpaRepository<Admin, Long> {
-
+    Admin findByUsuario(String usuario);
 }

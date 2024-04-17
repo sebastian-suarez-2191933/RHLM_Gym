@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-11T23:29:42-0500",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
+    date = "2024-04-16T22:34:08-0500",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
 )
 public class UsuarioMapperImpl implements UsuarioMapper {
 
@@ -19,14 +19,14 @@ public class UsuarioMapperImpl implements UsuarioMapper {
 
         Usuario usuario = new Usuario();
 
+        usuario.setEstatura( usuarioDTO.getEstatura() );
         usuario.setId( usuarioDTO.getId() );
         usuario.setIdPersona( usuarioDTO.getIdPersona() );
         usuario.setIdSuscripcion( usuarioDTO.getIdSuscripcion() );
-        usuario.setPeso( usuarioDTO.getPeso() );
-        usuario.setEstatura( usuarioDTO.getEstatura() );
-        usuario.setTipoCuerpo( usuarioDTO.getTipoCuerpo() );
-        usuario.setPorcentajeGraso( usuarioDTO.getPorcentajeGraso() );
         usuario.setObjetivo( usuarioDTO.getObjetivo() );
+        usuario.setPeso( usuarioDTO.getPeso() );
+        usuario.setPorcentajeGraso( usuarioDTO.getPorcentajeGraso() );
+        usuario.setTipoCuerpo( usuarioDTO.getTipoCuerpo() );
 
         return usuario;
     }
@@ -39,14 +39,14 @@ public class UsuarioMapperImpl implements UsuarioMapper {
 
         UsuarioDTO usuarioDTO = new UsuarioDTO();
 
+        usuarioDTO.setEstatura( usuario.getEstatura() );
         usuarioDTO.setId( usuario.getId() );
         usuarioDTO.setIdPersona( usuario.getIdPersona() );
         usuarioDTO.setIdSuscripcion( usuario.getIdSuscripcion() );
-        usuarioDTO.setPeso( usuario.getPeso() );
-        usuarioDTO.setEstatura( usuario.getEstatura() );
-        usuarioDTO.setTipoCuerpo( usuario.getTipoCuerpo() );
-        usuarioDTO.setPorcentajeGraso( usuario.getPorcentajeGraso() );
         usuarioDTO.setObjetivo( usuario.getObjetivo() );
+        usuarioDTO.setPeso( usuario.getPeso() );
+        usuarioDTO.setPorcentajeGraso( usuario.getPorcentajeGraso() );
+        usuarioDTO.setTipoCuerpo( usuario.getTipoCuerpo() );
 
         return usuarioDTO;
     }

@@ -15,5 +15,7 @@ public interface IAdminService {
 
     AdminDTO updateAdmin(Long id, AdminDTO adminDTO);
 
+    AdminDTO findByUsuario(String usuario);
+
     void deleteAdmin(Long id);
 }

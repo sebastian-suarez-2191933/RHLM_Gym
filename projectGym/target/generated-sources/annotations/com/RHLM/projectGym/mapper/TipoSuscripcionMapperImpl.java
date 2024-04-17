@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-11T23:29:42-0500",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
+    date = "2024-04-16T22:34:08-0500",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
 )
 public class TipoSuscripcionMapperImpl implements TipoSuscripcionMapper {
 
@@ -21,10 +21,10 @@ public class TipoSuscripcionMapperImpl implements TipoSuscripcionMapper {
 
         tipoSuscripcion.setId( tipoSuscripcionDTO.getId() );
         tipoSuscripcion.setNombre( tipoSuscripcionDTO.getNombre() );
-        tipoSuscripcion.setTiempo( tipoSuscripcionDTO.getTiempo() );
         if ( tipoSuscripcionDTO.getPrecio() != null ) {
             tipoSuscripcion.setPrecio( tipoSuscripcionDTO.getPrecio() );
         }
+        tipoSuscripcion.setTiempo( tipoSuscripcionDTO.getTiempo() );
 
         return tipoSuscripcion;
     }
@@ -39,8 +39,8 @@ public class TipoSuscripcionMapperImpl implements TipoSuscripcionMapper {
 
         tipoSuscripcionDTO.setId( tipoSuscripcion.getId() );
         tipoSuscripcionDTO.setNombre( tipoSuscripcion.getNombre() );
-        tipoSuscripcionDTO.setTiempo( tipoSuscripcion.getTiempo() );
         tipoSuscripcionDTO.setPrecio( tipoSuscripcion.getPrecio() );
+        tipoSuscripcionDTO.setTiempo( tipoSuscripcion.getTiempo() );
 
         return tipoSuscripcionDTO;
     }

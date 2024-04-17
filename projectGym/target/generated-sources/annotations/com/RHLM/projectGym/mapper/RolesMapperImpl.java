@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-11T23:29:42-0500",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
+    date = "2024-04-16T22:34:08-0500",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
 )
 public class RolesMapperImpl implements RolesMapper {
 
@@ -19,10 +19,10 @@ public class RolesMapperImpl implements RolesMapper {
 
         Roles roles = new Roles();
 
-        roles.setId( rolesDTO.getId() );
-        roles.setNombre( rolesDTO.getNombre() );
         roles.setFechaDesde( rolesDTO.getFechaDesde() );
         roles.setFechaHasta( rolesDTO.getFechaHasta() );
+        roles.setId( rolesDTO.getId() );
+        roles.setNombre( rolesDTO.getNombre() );
 
         return roles;
     }
@@ -35,10 +35,10 @@ public class RolesMapperImpl implements RolesMapper {
 
         RolesDTO rolesDTO = new RolesDTO();
 
-        rolesDTO.setId( roles.getId() );
-        rolesDTO.setNombre( roles.getNombre() );
         rolesDTO.setFechaDesde( roles.getFechaDesde() );
         rolesDTO.setFechaHasta( roles.getFechaHasta() );
+        rolesDTO.setId( roles.getId() );
+        rolesDTO.setNombre( roles.getNombre() );
 
         return rolesDTO;
     }

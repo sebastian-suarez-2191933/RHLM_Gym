@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-11T23:29:42-0500",
-    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
+    date = "2024-04-16T22:34:08-0500",
+    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
 )
 public class PersonaMapperImpl implements PersonaMapper {
 
@@ -19,12 +19,12 @@ public class PersonaMapperImpl implements PersonaMapper {
 
         Persona persona = new Persona();
 
-        persona.setId( personaDTO.getId() );
-        persona.setNombre( personaDTO.getNombre() );
         persona.setFechanac( personaDTO.getFechanac() );
+        persona.setId( personaDTO.getId() );
         if ( personaDTO.getIdentificacion() != null ) {
             persona.setIdentificacion( personaDTO.getIdentificacion() );
         }
+        persona.setNombre( personaDTO.getNombre() );
 
         return persona;
     }
@@ -37,10 +37,10 @@ public class PersonaMapperImpl implements PersonaMapper {
 
         PersonaDTO personaDTO = new PersonaDTO();
 
-        personaDTO.setId( persona.getId() );
-        personaDTO.setNombre( persona.getNombre() );
         personaDTO.setFechanac( persona.getFechanac() );
+        personaDTO.setId( persona.getId() );
         personaDTO.setIdentificacion( persona.getIdentificacion() );
+        personaDTO.setNombre( persona.getNombre() );
 
         return personaDTO;
     }

@@ -58,4 +58,14 @@ public class AdminImpl implements IAdminService {
         Admin admin = adminRepository.findById(id).orElseThrow(DataNotFoundException::new);
         this.adminRepository.deleteById(admin.getId());
     }
+
+    @Override
+    public AdminDTO findByUsuario(String usuario) {
+        Admin adminFound = this.adminRepository.findByUsuario(usuario);
+        if (adminFound == null) {
+            throw new DataNotFoundException(); // Lanza una excepción si no se encuentra el administrador
+        }
+        return AdminMapper.INSTANCE.toAdminDTO(adminFound);
+    }
+
 }

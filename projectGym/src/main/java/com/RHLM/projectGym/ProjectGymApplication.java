@@ -19,7 +19,7 @@ public class ProjectGymApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/").allowedOrigins("http://127.0.0.7:5500").allowedMethods("").allowedHeaders("");
+				registry.addMapping("/**").allowedOrigins("http://127.0.0.7:5500").allowedMethods("*").allowedHeaders("*");
 			}
 		};
 	}
