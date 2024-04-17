@@ -9,6 +9,7 @@ import com.RHLM.projectGym.model.Suscripcion;
 import com.RHLM.projectGym.model.TipoSuscripcion;
 import com.RHLM.projectGym.repository.ISuscripcionRepository;
 import com.RHLM.projectGym.services.interfaces.ISuscripcionService;
+import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -22,6 +23,9 @@ public class SuscripcionImpl implements ISuscripcionService {
 
     @Autowired
     private ISuscripcionRepository suscripcionRepository;
+
+    @Autowired
+    private EntityManager entityManager;
 
     @Override
     public List<SuscripcionDTO> getAll() {
@@ -53,6 +57,7 @@ public class SuscripcionImpl implements ISuscripcionService {
 
         Suscripcion suscripcionUpdated = this.suscripcionRepository.save(suscripcion);
         return SuscripcionMapper.INSTANCE.toSuscripcionDTO(suscripcionUpdated);
+
     }
     @Override
     public void deleteSuscripcion(Long id){
