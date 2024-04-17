@@ -40,14 +40,15 @@ public class AsistenciaController {
     }
 
     @PostMapping
-    public ResponseEntity<AsistenciaDTO> createAsistencia(@RequestBody AsistenciaDTO asistenciaDTO){
-        Asistencia asistencia = AsistenciaMapper.INSTANCE.toAsistencia(asistenciaDTO);
-        var asistenciaBD = this.asistenciaService.createAsistencia(asistencia);
+    public ResponseEntity<AsistenciaDTO> createAsistencia(@RequestParam(value = "identificacion", required = true) int identificacion){
+
+        var asistenciaBD = this.asistenciaService.createAsistencia(identificacion);
         if (asistenciaBD == null){
             return new ResponseEntity<>(HttpStatus.CONFLICT);
         }
         return new ResponseEntity<>(AsistenciaMapper.INSTANCE.toAsistenciaDTO(asistenciaBD), HttpStatus.OK);
     }
+
 
     @PutMapping
     public ResponseEntity<AsistenciaDTO> updateAsistencia(@RequestBody AsistenciaDTO asistenciaDTO){

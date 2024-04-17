@@ -49,13 +49,13 @@ public class Asistencia implements Serializable {
     @JoinColumn(name = "id_rutina",insertable = false,updatable = false)
     private Rutina rutina;
 
-    @PrePersist
-    protected void onCreate() {
-        TimeZone colombiaTimeZone = TimeZone.getTimeZone("America/Bogota");
-        llegada = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        sdf.setTimeZone(colombiaTimeZone);
-        llegada = new Date(sdf.format(llegada));
-    }
+//    @PrePersist
+//    protected void onCreate() {
+//        TimeZone colombiaTimeZone = TimeZone.getTimeZone("America/Bogota");
+//        llegada = new Date();
+//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+//        sdf.setTimeZone(colombiaTimeZone);
+//        llegada = new Date(sdf.format(llegada));
+//    }
 
 }

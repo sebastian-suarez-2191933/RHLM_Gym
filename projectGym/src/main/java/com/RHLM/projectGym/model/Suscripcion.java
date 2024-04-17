@@ -3,13 +3,17 @@ package com.RHLM.projectGym.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.io.Serializable;
 import java.util.Date;
 
 @Entity
 @Data
+@Getter
+@Setter
 @NoArgsConstructor
 @Table(name = "suscripcion", schema = "public")
 public class Suscripcion implements Serializable {
@@ -33,10 +37,17 @@ public class Suscripcion implements Serializable {
     @Column(name = "estado")
     private Boolean estado;
 
+
     //Relaciones
 
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "id_tipo_suscripcion",insertable = false,updatable = false)
     private TipoSuscripcion tipoSuscripcion;
+
+
+    public void desactivar() {
+        this.estado = false;
+    }
+
 }

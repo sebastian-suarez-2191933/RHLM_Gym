@@ -12,12 +12,11 @@ public interface IAsistenciaService {
 
     Asistencia getAsistenciaById(Long id);
 
-    Asistencia createAsistencia(Asistencia asistencia);
+    Asistencia createAsistencia(int identificacion);
 
     Asistencia updateAsistencia(Asistencia asistencia);
 
     void deleteAsistenciaById(Long id);
 
-    Asistencia findByIdentificacion(int identificacion);
-
+    Long findIdUsuarioByIdentificacion(int identificacion);
 }
