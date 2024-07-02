@@ -3,7 +3,6 @@ package com.RHLM.projectGym.services.impl;
 import com.RHLM.projectGym.exception.DataNotFoundException;
 import com.RHLM.projectGym.exception.SubscriptionInactiveUserException;
 import com.RHLM.projectGym.exception.UserNoRegisteredException;
-import com.RHLM.projectGym.mapper.SuscripcionMapper;
 import com.RHLM.projectGym.model.Asistencia;
 import com.RHLM.projectGym.model.Suscripcion;
 import com.RHLM.projectGym.model.Usuario;
@@ -72,12 +71,8 @@ public class AsistenciaServiceImpl implements IAsistenciaService {
         if (usuario.getSuscripcion().getFechaFin() == null || fechaFinInstant.isBefore(fechaActual)) {
 
             var sus = this.suscripcionRepository.findById(usuario.getIdSuscripcion()).orElseThrow(DataNotFoundException::new);
-
-
             sus.desactivar();
-
             var suscripcionBD = this.suscripcionRepository.save(sus);
-
             this.validacion(suscripcionBD);
 
         }
@@ -94,8 +89,6 @@ public class AsistenciaServiceImpl implements IAsistenciaService {
         if (Boolean.FALSE.equals(suscrip.getEstado()))
             throw new SubscriptionInactiveUserException("Suscripción inactiva");
     }
-
-
 
 
     @Override
@@ -119,6 +112,11 @@ public class AsistenciaServiceImpl implements IAsistenciaService {
     @Override
     public Long findIdUsuarioByIdentificacion(int identificacion) {
         return this.usuarioRepository.findIdUsuarioByIdentificacion(identificacion);
+    }
+
+    @Override
+    public List<Asistencia> findAsistenciaByFecha(Date fechaLlegada){
+        return this.asistenciaRepository.findAsistenciaByFecha(fechaLlegada);
     }
 
 

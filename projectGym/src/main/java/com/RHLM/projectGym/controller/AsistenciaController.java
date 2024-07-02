@@ -5,11 +5,13 @@ import com.RHLM.projectGym.mapper.AsistenciaMapper;
 import com.RHLM.projectGym.model.Asistencia;
 import com.RHLM.projectGym.services.interfaces.IAsistenciaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -29,6 +31,17 @@ public class AsistenciaController {
         return new ResponseEntity<>(asistenciaList.stream()
                 .map(AsistenciaMapper.INSTANCE::toAsistenciaDTO).collect(Collectors.toList()), HttpStatus.OK);
     }
+
+    @GetMapping("/findAsistenciaByFecha")
+    public ResponseEntity<List<AsistenciaDTO>> findAsistenciaByFecha(@RequestParam("fechaLlegada") @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaLlegada){
+        List<Asistencia> asistenciaList = this.asistenciaService.findAsistenciaByFecha(fechaLlegada);
+        if (asistenciaList == null || asistenciaList.isEmpty()){
+            return new ResponseEntity<>(new ArrayList<>(), HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(asistenciaList.stream()
+                .map(AsistenciaMapper.INSTANCE::toAsistenciaDTO).collect(Collectors.toList()), HttpStatus.OK);
+    }
+
 
     @GetMapping("/{id}")
     public ResponseEntity<AsistenciaDTO> getAsistenciaById(@PathVariable(value = "id") Long id){

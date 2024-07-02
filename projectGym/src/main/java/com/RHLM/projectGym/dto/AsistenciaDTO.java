@@ -13,9 +13,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class AsistenciaDTO {
     private Long id;
-
     private Long idUsuario;
-
     private Long idRutina;
 
     @Temporal(TemporalType.DATE)
@@ -24,15 +22,17 @@ public class AsistenciaDTO {
     @Temporal(TemporalType.DATE)
     private Date salida;
 
-
+    //De la tabla Usuario
     private String nombreUsuario;
+
+    //De la tabla Rutina
     private String nombreRutina;
 
+    //De la tabla Suscripcion
     @Temporal(TemporalType.DATE)
     private Date fechaInicio;
 
     @Temporal(TemporalType.DATE)
-
     private Date fechaFin;
     private Boolean estado;
 }
