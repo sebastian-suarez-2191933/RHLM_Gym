@@ -5,30 +5,140 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84fb6695-df2f-4885-9349-1cf646284a47" name="Changes" comment="Se añaden TODOS los modelos de negocio">
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/exception/SubscriptionInactiveUserException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/exception/UserNoRegisteredException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/ProjectGymApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/ProjectGymApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/AsistenciaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/AsistenciaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/PersonaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/controller/PersonaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Asistencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Asistencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Suscripcion.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/model/Suscripcion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/AsistenciaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/dto/AsistenciaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/AsistenciaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/mapper/AsistenciaMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IAsistenciaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IAsistenciaRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/ISuscripcionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/ISuscripcionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IUsuarioRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/repository/IUsuarioRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/AsistenciaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/AsistenciaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/SuscripcionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/impl/SuscripcionImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/IAsistenciaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/src/main/java/com/RHLM/projectGym/services/interfaces/IAsistenciaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/ProjectGymApplication$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/ProjectGymApplication$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/ProjectGymApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/ProjectGymApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/AsistenciaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/AsistenciaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/MaquinaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/MaquinaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/MaquinaMusculoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/MaquinaMusculoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/MusculoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/MusculoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/PersonaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/PersonaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/RolesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/RolesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/RolesUsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/RolesUsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/RutinaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/RutinaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/RutinaMaquinaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/RutinaMaquinaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/SuscripcionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/SuscripcionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/TipoSuscripcionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/TipoSuscripcionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/controller/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/AdminDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/AdminDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/AsistenciaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/AsistenciaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/MaquinaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/MaquinaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/MaquinaMusculoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/MaquinaMusculoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/MusculoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/MusculoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/PersonaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/PersonaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/RolesDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/RolesDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/RolesUsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/RolesUsuarioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/RutinaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/RutinaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/RutinaMaquinaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/RutinaMaquinaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/SuscripcionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/SuscripcionDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/TipoSuscripcionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/TipoSuscripcionDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/UsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/dto/UsuarioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/exception/DataNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/exception/DataNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/exception/SubscriptionInactiveUserException.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/exception/SubscriptionInactiveUserException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/exception/UserNoRegisteredException.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/exception/UserNoRegisteredException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/AdminMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/AdminMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/AdminMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/AsistenciaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/AsistenciaMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/AsistenciaMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/AsistenciaMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MaquinaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MaquinaMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MaquinaMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MaquinaMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MaquinaMusculoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MaquinaMusculoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MaquinaMusculoMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MaquinaMusculoMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MusculoMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MusculoMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MusculoMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/MusculoMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/PersonaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/PersonaMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/PersonaMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/PersonaMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RolesMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RolesMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RolesMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RolesMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RolesUsuarioMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RolesUsuarioMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RolesUsuarioMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RolesUsuarioMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RutinaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RutinaMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RutinaMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RutinaMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RutinaMaquinaMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RutinaMaquinaMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RutinaMaquinaMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/RutinaMaquinaMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/SuscripcionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/SuscripcionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/SuscripcionMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/SuscripcionMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/TipoSuscripcionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/TipoSuscripcionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/TipoSuscripcionMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/TipoSuscripcionMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/UsuarioMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/UsuarioMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/UsuarioMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/mapper/UsuarioMapperImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Admin.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Asistencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Asistencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Maquina.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Maquina.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/MaquinaMusculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/MaquinaMusculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Musculo.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Musculo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Persona.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Persona.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Roles.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Roles.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/RolesUsuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/RolesUsuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Rutina.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Rutina.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/RutinaMaquina.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/RutinaMaquina.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Suscripcion.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Suscripcion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/TipoSuscripcion.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/TipoSuscripcion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/model/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IAdminRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IAdminRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IAsistenciaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IAsistenciaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IMaquinaMusculoRespository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IMaquinaMusculoRespository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IMaquinaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IMaquinaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IMusculoRespository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IMusculoRespository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IPersonaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IPersonaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IRolesRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IRolesRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IRolesUsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IRolesUsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IRutinaMaquinaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IRutinaMaquinaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IRutinaRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IRutinaRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/ISuscripcionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/ISuscripcionRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/ITipoSuscripcionRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/ITipoSuscripcionRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IUsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/repository/IUsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/JwtUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/JwtUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/AdminImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/AdminImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/AsistenciaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/AsistenciaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/MaquinaMusculoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/MaquinaMusculoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/MaquinaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/MaquinaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/MusculoServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/MusculoServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/PersonaImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/PersonaImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/RolesImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/RolesImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/RolesUsuarioImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/RolesUsuarioImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/RutinaMaquinaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/RutinaMaquinaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/RutinaServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/RutinaServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/SuscripcionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/SuscripcionImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/TipoSuscripcionImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/TipoSuscripcionImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/UsuarioImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/impl/UsuarioImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IAdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IAdminService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IAsistenciaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IAsistenciaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IMaquinaMusculoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IMaquinaMusculoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IMaquinaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IMaquinaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IMusculoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IMusculoService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IPersonaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IPersonaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IRolesService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IRolesService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IRolesUsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IRolesUsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IRutinaMaquinaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IRutinaMaquinaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IRutinaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IRutinaService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/ISuscripcionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/ISuscripcionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/ITipoSuscripcionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/ITipoSuscripcionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IUsuarioService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/services/interfaces/IUsuarioService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/util/AdminAuthService.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/classes/com/RHLM/projectGym/util/AdminAuthService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/AdminMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/AdminMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/AsistenciaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/AsistenciaMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MaquinaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MaquinaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MaquinaMusculoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MaquinaMusculoMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MusculoMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/MusculoMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/PersonaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/PersonaMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RolesMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RolesMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RolesUsuarioMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RolesUsuarioMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RutinaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RutinaMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RutinaMaquinaMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/RutinaMaquinaMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/SuscripcionMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/SuscripcionMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/TipoSuscripcionMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/TipoSuscripcionMapperImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/UsuarioMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/generated-sources/annotations/com/RHLM/projectGym/mapper/UsuarioMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projectGym/target/test-classes/com/RHLM/projectGym/ProjectGymApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/projectGym/target/test-classes/com/RHLM/projectGym/ProjectGymApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,33 +189,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ProjectGymApplication.executor": "Debug",
-    "Maven.projectGym [clean].executor": "Run",
-    "Maven.projectGym [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.ProjectGymApplication.executor": "Run",
-    "git-widget-placeholder": "consultaAsistencia",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/tiendaDER",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ProjectGymApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.projectGym [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.projectGym [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ProjectGymApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/cesarhurtado/Desktop/Entornos/Back/RHLM_Gym_Back&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />

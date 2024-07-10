@@ -13,12 +13,16 @@ import com.RHLM.projectGym.services.interfaces.IAsistenciaService;
 import com.RHLM.projectGym.services.interfaces.ISuscripcionService;
 import jakarta.persistence.EntityManager;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.*;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 @Transactional
@@ -52,11 +56,11 @@ public class AsistenciaServiceImpl implements IAsistenciaService {
 
 
     @Override
-    public Asistencia createAsistencia(int identificacion) {
+    public ResponseEntity<Map<String, Object>> createAsistencia(int identificacion) {
         Usuario usuario = this.usuarioRepository.findSubByIdentificacion(identificacion);
 
         if (usuario == null){
-            throw new UserNoRegisteredException("El usuario con la identificación " + identificacion + " no está registrado en el gimnasio");
+            throw new UserNoRegisteredException("El usuario con la identificación " + identificacion + " no está registrado en el gimnasio.");
         }
 
         ZonedDateTime fechaActualZoned = ZonedDateTime.now(ZoneId.of("America/Bogota"));
@@ -82,12 +86,21 @@ public class AsistenciaServiceImpl implements IAsistenciaService {
         asistencia.setLlegada(new Date());
         var asistenciaBD = this.asistenciaRepository.save(asistencia);
         this.entityManager.refresh(asistenciaBD);
-        return asistenciaBD;
+
+        // Calcular los días restantes
+        long diasRestantes = ChronoUnit.DAYS.between(fechaActual, fechaFinInstant);
+
+        // Crear respuesta personalizada
+        Map<String, Object> respuesta = new HashMap<>();
+        respuesta.put("asistencia", asistenciaBD);
+        respuesta.put("diasRestantes", diasRestantes);
+
+        return ResponseEntity.ok(respuesta); // Devolver la respuesta como JSON
     }
 
     private void validacion(Suscripcion suscrip){
         if (Boolean.FALSE.equals(suscrip.getEstado()))
-            throw new SubscriptionInactiveUserException("Suscripción inactiva");
+            throw new SubscriptionInactiveUserException("Suscripción inactiva, renueve su suscripción.");
     }
 
 
@@ -118,6 +131,13 @@ public class AsistenciaServiceImpl implements IAsistenciaService {
     public List<Asistencia> findAsistenciaByFecha(Date fechaLlegada){
         return this.asistenciaRepository.findAsistenciaByFecha(fechaLlegada);
     }
+
+    @Override
+    public List<Asistencia> findAsistenciaByDocument(int documento){
+        return this.asistenciaRepository.findAsistenciaByDocument(documento);
+    }
+
+
 
 
 

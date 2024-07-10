@@ -32,6 +32,9 @@ public class AsistenciaDTO {
     @Temporal(TemporalType.DATE)
     private Date fechaInicio;
 
+    //De la tabla tipo_suscripcion
+    private String nombreSuscripcion;
+
     @Temporal(TemporalType.DATE)
     private Date fechaFin;
     private Boolean estado;

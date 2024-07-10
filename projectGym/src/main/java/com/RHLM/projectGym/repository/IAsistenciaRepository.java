@@ -17,4 +17,11 @@ public interface IAsistenciaRepository extends JpaRepository<Asistencia, Long> {
             "WHERE a.llegada = :fechaLlegada")
     List<Asistencia> findAsistenciaByFecha(@Param("fechaLlegada") Date fechaLlegada);
 
+    @Query("SELECT a " +
+            "from Asistencia a " +
+            "WHERE a.usuario.persona.identificacion = :identificacion")
+    List<Asistencia> findAsistenciaByDocument(@Param("identificacion") int identificacion);
+
 }
+
+

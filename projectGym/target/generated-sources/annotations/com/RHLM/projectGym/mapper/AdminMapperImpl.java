@@ -6,8 +6,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-16T22:34:08-0500",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
+    date = "2024-07-09T00:43:04-0500",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
 )
 public class AdminMapperImpl implements AdminMapper {
 
@@ -19,11 +19,11 @@ public class AdminMapperImpl implements AdminMapper {
 
         Admin admin = new Admin();
 
-        admin.setContra( adminDTO.getContra() );
-        admin.setCorreo( adminDTO.getCorreo() );
         admin.setId( adminDTO.getId() );
         admin.setIdPersona( adminDTO.getIdPersona() );
         admin.setUsuario( adminDTO.getUsuario() );
+        admin.setContra( adminDTO.getContra() );
+        admin.setCorreo( adminDTO.getCorreo() );
 
         return admin;
     }
@@ -36,11 +36,11 @@ public class AdminMapperImpl implements AdminMapper {
 
         AdminDTO adminDTO = new AdminDTO();
 
-        adminDTO.setContra( admin.getContra() );
-        adminDTO.setCorreo( admin.getCorreo() );
         adminDTO.setId( admin.getId() );
         adminDTO.setIdPersona( admin.getIdPersona() );
         adminDTO.setUsuario( admin.getUsuario() );
+        adminDTO.setContra( admin.getContra() );
+        adminDTO.setCorreo( admin.getCorreo() );
 
         return adminDTO;
     }

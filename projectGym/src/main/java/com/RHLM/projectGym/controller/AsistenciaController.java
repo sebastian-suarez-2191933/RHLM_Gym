@@ -10,9 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @RestController
@@ -32,6 +30,8 @@ public class AsistenciaController {
                 .map(AsistenciaMapper.INSTANCE::toAsistenciaDTO).collect(Collectors.toList()), HttpStatus.OK);
     }
 
+
+    //    NEWWWWWW
     @GetMapping("/findAsistenciaByFecha")
     public ResponseEntity<List<AsistenciaDTO>> findAsistenciaByFecha(@RequestParam("fechaLlegada") @DateTimeFormat(pattern = "yyyy-MM-dd") Date fechaLlegada){
         List<Asistencia> asistenciaList = this.asistenciaService.findAsistenciaByFecha(fechaLlegada);
@@ -41,6 +41,18 @@ public class AsistenciaController {
         return new ResponseEntity<>(asistenciaList.stream()
                 .map(AsistenciaMapper.INSTANCE::toAsistenciaDTO).collect(Collectors.toList()), HttpStatus.OK);
     }
+
+    // NEW
+    @GetMapping("/findAsistenciaByDocument")
+    public ResponseEntity<List<AsistenciaDTO>> findAsistenciaByDocument(@RequestParam("identificacion") int identificacion){
+        List<Asistencia> asistenciaList = this.asistenciaService.findAsistenciaByDocument(identificacion);
+        if (asistenciaList == null || asistenciaList.isEmpty()){
+            return new ResponseEntity<>(new ArrayList<>(), HttpStatus.NO_CONTENT);
+        }
+        return new ResponseEntity<>(asistenciaList.stream()
+                .map(AsistenciaMapper.INSTANCE::toAsistenciaDTO).collect(Collectors.toList()), HttpStatus.OK);
+    }
+
 
 
     @GetMapping("/{id}")
@@ -52,14 +64,27 @@ public class AsistenciaController {
         return new ResponseEntity<>(AsistenciaMapper.INSTANCE.toAsistenciaDTO(asistencia), HttpStatus.OK);
     }
 
-    @PostMapping
-    public ResponseEntity<AsistenciaDTO> createAsistencia(@RequestParam(value = "identificacion", required = true) int identificacion){
 
-        var asistenciaBD = this.asistenciaService.createAsistencia(identificacion);
-        if (asistenciaBD == null){
-            return new ResponseEntity<>(HttpStatus.CONFLICT);
+
+
+
+    @PostMapping
+    public ResponseEntity<Map<String, Object>> createAsistencia(@RequestParam(value = "identificacion", required = true) int identificacion) {
+        ResponseEntity<Map<String, Object>> respuestaServicio = this.asistenciaService.createAsistencia(identificacion);
+
+        if (respuestaServicio.getStatusCode().is2xxSuccessful()) {
+            Map<String, Object> respuesta = respuestaServicio.getBody();
+            Asistencia asistencia = (Asistencia) respuesta.get("asistencia");
+            long diasRestantes = (long) respuesta.get("diasRestantes");
+
+            Map<String, Object> respuestaFinal = new HashMap<>();
+            respuestaFinal.put("asistencia", AsistenciaMapper.INSTANCE.toAsistenciaDTO(asistencia));
+            respuestaFinal.put("diasRestantes", diasRestantes);
+
+            return ResponseEntity.ok(respuestaFinal);
+        } else {
+            return ResponseEntity.status(respuestaServicio.getStatusCode()).body(null);
         }
-        return new ResponseEntity<>(AsistenciaMapper.INSTANCE.toAsistenciaDTO(asistenciaBD), HttpStatus.OK);
     }
 
 

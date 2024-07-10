@@ -5,14 +5,15 @@ import com.RHLM.projectGym.model.Asistencia;
 import com.RHLM.projectGym.model.Persona;
 import com.RHLM.projectGym.model.Rutina;
 import com.RHLM.projectGym.model.Suscripcion;
+import com.RHLM.projectGym.model.TipoSuscripcion;
 import com.RHLM.projectGym.model.Usuario;
 import java.util.Date;
 import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-16T22:34:08-0500",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
+    date = "2024-07-09T00:43:04-0500",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
 )
 public class AsistenciaMapperImpl implements AsistenciaMapper {
 
@@ -25,8 +26,8 @@ public class AsistenciaMapperImpl implements AsistenciaMapper {
         Asistencia asistencia = new Asistencia();
 
         asistencia.setId( asistenciaDTO.getId() );
-        asistencia.setIdRutina( asistenciaDTO.getIdRutina() );
         asistencia.setIdUsuario( asistenciaDTO.getIdUsuario() );
+        asistencia.setIdRutina( asistenciaDTO.getIdRutina() );
         asistencia.setLlegada( asistenciaDTO.getLlegada() );
         asistencia.setSalida( asistenciaDTO.getSalida() );
 
@@ -46,9 +47,10 @@ public class AsistenciaMapperImpl implements AsistenciaMapper {
         asistenciaDTO.setFechaInicio( asistenciaUsuarioSuscripcionFechaInicio( asistencia ) );
         asistenciaDTO.setFechaFin( asistenciaUsuarioSuscripcionFechaFin( asistencia ) );
         asistenciaDTO.setEstado( asistenciaUsuarioSuscripcionEstado( asistencia ) );
+        asistenciaDTO.setNombreSuscripcion( asistenciaUsuarioSuscripcionTipoSuscripcionNombre( asistencia ) );
         asistenciaDTO.setId( asistencia.getId() );
-        asistenciaDTO.setIdRutina( asistencia.getIdRutina() );
         asistenciaDTO.setIdUsuario( asistencia.getIdUsuario() );
+        asistenciaDTO.setIdRutina( asistencia.getIdRutina() );
         asistenciaDTO.setLlegada( asistencia.getLlegada() );
         asistenciaDTO.setSalida( asistencia.getSalida() );
 
@@ -144,5 +146,28 @@ public class AsistenciaMapperImpl implements AsistenciaMapper {
             return null;
         }
         return estado;
+    }
+
+    private String asistenciaUsuarioSuscripcionTipoSuscripcionNombre(Asistencia asistencia) {
+        if ( asistencia == null ) {
+            return null;
+        }
+        Usuario usuario = asistencia.getUsuario();
+        if ( usuario == null ) {
+            return null;
+        }
+        Suscripcion suscripcion = usuario.getSuscripcion();
+        if ( suscripcion == null ) {
+            return null;
+        }
+        TipoSuscripcion tipoSuscripcion = suscripcion.getTipoSuscripcion();
+        if ( tipoSuscripcion == null ) {
+            return null;
+        }
+        String nombre = tipoSuscripcion.getNombre();
+        if ( nombre == null ) {
+            return null;
+        }
+        return nombre;
     }
 }

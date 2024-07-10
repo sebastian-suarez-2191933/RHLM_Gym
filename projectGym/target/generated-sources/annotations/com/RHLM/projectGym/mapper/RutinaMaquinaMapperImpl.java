@@ -8,8 +8,8 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2024-04-16T22:34:08-0500",
-    comments = "version: 1.5.5.Final, compiler: Eclipse JDT (IDE) 3.38.0.v20240325-1403, environment: Java 17.0.10 (Eclipse Adoptium)"
+    date = "2024-07-09T00:43:04-0500",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 17.0.10 (Amazon.com Inc.)"
 )
 public class RutinaMaquinaMapperImpl implements RutinaMaquinaMapper {
 
@@ -22,8 +22,8 @@ public class RutinaMaquinaMapperImpl implements RutinaMaquinaMapper {
         RutinaMaquina rutinaMaquina = new RutinaMaquina();
 
         rutinaMaquina.setId( rutinaMaquinaDTO.getId() );
-        rutinaMaquina.setIdMaquina( rutinaMaquinaDTO.getIdMaquina() );
         rutinaMaquina.setIdRutina( rutinaMaquinaDTO.getIdRutina() );
+        rutinaMaquina.setIdMaquina( rutinaMaquinaDTO.getIdMaquina() );
 
         return rutinaMaquina;
     }
@@ -39,8 +39,8 @@ public class RutinaMaquinaMapperImpl implements RutinaMaquinaMapper {
         rutinaMaquinaDTO.setNombreRutina( rutinaMaquinaRutinaNombre( rutinaMaquina ) );
         rutinaMaquinaDTO.setNombreMaquina( rutinaMaquinaMaquinaNombre( rutinaMaquina ) );
         rutinaMaquinaDTO.setId( rutinaMaquina.getId() );
-        rutinaMaquinaDTO.setIdMaquina( rutinaMaquina.getIdMaquina() );
         rutinaMaquinaDTO.setIdRutina( rutinaMaquina.getIdRutina() );
+        rutinaMaquinaDTO.setIdMaquina( rutinaMaquina.getIdMaquina() );
 
         return rutinaMaquinaDTO;
     }

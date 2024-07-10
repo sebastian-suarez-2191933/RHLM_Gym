@@ -20,5 +20,6 @@ public interface AsistenciaMapper {
     @Mapping(target = "fechaInicio", source = "usuario.suscripcion.fechaInicio")
     @Mapping(target = "fechaFin", source = "usuario.suscripcion.fechaFin")
     @Mapping(target = "estado", source = "usuario.suscripcion.estado")
+    @Mapping(target = "nombreSuscripcion", source = "usuario.suscripcion.tipoSuscripcion.nombre")
     AsistenciaDTO toAsistenciaDTO(Asistencia asistencia);
 }
